@@ -1,0 +1,15 @@
+NiceThemes.com
+Agency Themes. FREE USE.
+
+For install copy folder /nicethemes_agency in themes/
+
+Include file *.fla to customize
+
+Thanks Marco Perdonò and Massimiliano Corvino
+
+www.nicethemes.com
+www.iloveopen.com
+
+
+In the folder include font for customize file *.fla
+For install the font copy file *.tft (font ext) in c:/Windows/font on your computers

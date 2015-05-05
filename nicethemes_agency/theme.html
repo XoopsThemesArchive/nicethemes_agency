@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<div align="center">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"			
+		codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+					width="732" height="323" align="middle">
+      <param name=movie value="<{$xoops_imageurl}>agency_header.swf" />
+      <param name=menu value=false />
+      <param name=quality value=high />
+      <param name=scale value=exactfit />
+      <param name=bgcolor value=#595959 />
+      <embed src="<{$xoops_imageurl}>agency_header.swf" menu=false quality=high scale=exactfit bgcolor=#595959
+				    width="732" height="323" align="middle" type="application/x-shockwave-flash" 
+					pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+  </object>
+  <div align="center">
+</div>
+<table cellspacing="0" width="732" bgcolor="#ffffff" style="border: 1px solid rgb(192,192,192)">
+    <tr>
+      <td id="leftcolumn" valign="top">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="nicethemes_agency/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->      </td>
+
+      <td id="centercolumn" valign="top">
+
+        <!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+
+        <table cellspacing="0" width="99%">
+          <tr>
+            <td id="centerCcolumn" colspan="2" >
+
+            <!-- Start center-center blocks loop -->
+            <{foreach item=block from=$xoops_ccblocks}>
+              <{include file="nicethemes_agency/theme_blockcenter_c.html"}>
+            <{/foreach}>
+            <!-- End center-center blocks loop -->            </td>
+          </tr>
+          <tr>
+            <td id="centerLcolumn" valign="top">
+
+            <!-- Start center-left blocks loop -->
+              <{foreach item=block from=$xoops_clblocks}>
+                <{include file="nicethemes_agency/theme_blockcenter_l.html"}>
+              <{/foreach}>
+            <!-- End center-left blocks loop -->
+
+            </td><td id="centerRcolumn" valign="top">
+
+            <!-- Start center-right blocks loop -->
+              <{foreach item=block from=$xoops_crblocks}>
+                <{include file="nicethemes_agency/theme_blockcenter_r.html"}>
+              <{/foreach}>
+            <!-- End center-right blocks loop -->
+
+            </td>
+          </tr>
+        </table>
+
+        <{/if}>
+        <!-- End display center blocks -->
+
+        <div id="content">
+          <{$xoops_contents}>
+        </div>
+      </td>
+
+      <{if $xoops_showrblock == 1}>
+
+      <td id="rightcolumn" valign="top">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="nicethemes_agency/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->      </td>
+
+      <{/if}>
+
+    </tr>
+</table>
+
+  <div align="center"><center>
+
+<table border="0" width="739" cellspacing="0" cellpadding="0" style="border-top: 1px solid rgb(45,43,32); border-bottom: 1px solid rgb(93,105,93)">
+  <tr>
+    <td id="footerbar" width="80%"><p align="center">Copyright: <{$xoops_meta_copyright}> By <{$xoops_sitename}><br>
+       2006-2007 All rights reserved. <small><a href="http://www.nicethemes.com/">Nice Themes.com</a></small> | <small><a href="http://www.iloveopen.com/"> I Love Open.com</a></small></td>
+    </tr>
+</table>
+</center></div>
+<br>
+  <br>
+</body>
+</html>
